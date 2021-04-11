@@ -1,0 +1,23 @@
+import React from 'react';
+import { View, Text, StyleSheet} from 'react-native';
+
+export default function App() {
+ return (
+   <View style={styles.container}>
+     <Text style={styles.title} > Test </Text>
+   </View>
+  );
+}; 
+
+const styles = StyleSheet.create({
+  container:{
+    flex:1, 
+    backgroundColor: '#155344',
+    justifyContent: 'center',
+    alignItems:'center',
+  },
+  title:{
+    fontSize:25,
+    color: '#323617'
+  }
+})
