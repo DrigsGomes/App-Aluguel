@@ -29,12 +29,31 @@ function Routes (){
                             size={24}
                             color="#000"
                             />
-
+                
                         </TouchableOpacity>
                     )              
                 }}
                  />
-                <Stack.Screen name="detail" component={Detail}/>
+                <Stack.Screen 
+                name="detail" 
+                component={Detail}
+                options={{
+                    title: 'DETALHE',
+                    headerBackTitleStyle:{
+                        fontFamily: 'Montserrat_700Bold'
+                    },
+                    headerRight: () => (
+                        <TouchableOpacity style={{marginRight:15}}>
+                            <Feather
+                            name="shopping-bag"
+                            size={24}
+                            color="#000"
+                            />
+                
+                        </TouchableOpacity>
+                    )              
+                }}
+                />
 
             </Stack.Navigator>
         </NavigationContainer>
