@@ -25,17 +25,6 @@ export default function Home(){
         <Text style={styles.title}>Novidades</Text>
       </View>
 
-      <View>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}> 
-          <New
-          cover={require('../assests/House1.jpeg')}
-          name="Casa de praia"
-          description="Linda casa de praia, lugar suguro e bem monitorado."
-          onPress={() => {}}
-          />
-
-        </ScrollView>
-      </View>
     </ScrollView>
 
   )
