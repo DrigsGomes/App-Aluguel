@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet,TextInput} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Feather} from '@expo/vector-icons';
-import {New} from '../components/New';
+import New from '../components/New';
 
 export default function Home(){
   return(
@@ -27,12 +27,12 @@ export default function Home(){
 
       <View>
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}> 
-        <New
-        cover={require('../assests/House1.jpeg')}
-        name="Casa de praia"
-        description="Linda casa de praia, lugar suguro e bem monitorado."
-        onPress={() => {}}
-        />
+          <New
+          cover={require('../assests/House1.jpeg')}
+          name="Casa de praia"
+          description="Linda casa de praia, lugar suguro e bem monitorado."
+          onPress={() => {}}
+          />
 
         </ScrollView>
       </View>
