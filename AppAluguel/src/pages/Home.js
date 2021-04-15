@@ -3,6 +3,7 @@ import { View, Text, StyleSheet,TextInput} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Feather} from '@expo/vector-icons';
 import New from '../components/New';
+import House from '../components/House';
 import {useNavigation} from '@react-navigation/native'
 
 export default function Home(){
@@ -54,6 +55,13 @@ export default function Home(){
      <View style={{flexDirection:"row", marginBottom:10, alignItems:"center"}}>
        <Text style={[styles.title, {marginTop:20} ]}> Próximo de você </Text>
      </View>
+
+     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}>
+       <House/>
+
+     </ScrollView>
+
+
     </ScrollView>
 
 
