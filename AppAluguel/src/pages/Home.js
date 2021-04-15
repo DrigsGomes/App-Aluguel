@@ -49,11 +49,14 @@ export default function Home(){
         onPress={() => {}}
         />
 
-
-
       </ScrollView>
 
+     <View style={{flexDirection:"row", marginBottom:10, alignItems:"center"}}>
+       <Text style={[styles.title, {marginTop:20} ]}> Próximo de você </Text>
+     </View>
     </ScrollView>
+
+
 
   )
 };
