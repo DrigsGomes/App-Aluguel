@@ -57,7 +57,18 @@ export default function Home(){
      </View>
 
      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}>
-       <House/>
+      
+     <House
+       cover={require('../assests/House4.jpeg')}
+       />
+
+       <House
+       cover={require('../assests/House5.jpeg')}
+       />
+
+      <House
+       cover={require('../assests/House6.jpeg')}
+       />
 
      </ScrollView>
 

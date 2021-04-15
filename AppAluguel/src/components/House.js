@@ -1,17 +1,17 @@
 import React from 'react';
 import { View, Text, StyleSheet,Image,} from 'react-native';
 
-export default function House() {
+export default function House({cover}) {
  return (
    <View>
      <View style={styles.container}>
        <Image
-       source={require('../assests/House4.jpeg')}
+       source={cover}
        style={styles.cover}
        />
 
      <View style={styles.content}>     
-       <Text style={styles.desc}> Uma linda casa de prai localizada em Maceió</Text>
+       <Text style={styles.desc}> Linda pousada localizada em Maceió</Text>
 
        <Text style={styles.price}> R$ 962,58</Text>
 
