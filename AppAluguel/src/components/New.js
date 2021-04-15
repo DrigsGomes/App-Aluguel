@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, Image} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {Ionicons} from '@expo/vector-icons';
 
@@ -8,7 +8,7 @@ export default function New (props) {
      <TouchableOpacity onPress={props.onPress} style={styles.container}>
          
          <Image
-         Source={props.cover}
+         source={props.cover}
          style={styles.cover}
          />
 
