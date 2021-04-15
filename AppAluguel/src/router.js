@@ -10,7 +10,7 @@ import Detail from './pages/Datail';
 
 const Stack = createStackNavigator();
 
-function Routes (){
+function Routes(){
     return(
         <NavigationContainer>
             <Stack.Navigator>

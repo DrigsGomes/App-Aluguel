@@ -3,8 +3,11 @@ import { View, Text, StyleSheet,TextInput} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Feather} from '@expo/vector-icons';
 import New from '../components/New';
+import {useNavigation} from '@react-navigation/native'
 
 export default function Home(){
+
+  const navigation = useNavigation();
   return(
     <ScrollView 
     showsHorizontalScrollIndicator={false}
@@ -30,8 +33,23 @@ export default function Home(){
         cover={require('../assests/House1.jpg')}
         name='Casa de praia'
         description="Linda casa de praia, lugar seguro e monitorado."
+        onPress={() => navigation.navigate('detail')}
+        />
+
+      <New
+        cover={require('../assests/House2.jpg')}
+        name='Casa de Lual'
+        description="Linda casa de praia, lugar seguro e monitorado."
         onPress={() => {}}
         />
+      <New
+        cover={require('../assests/House3.jpeg')}
+        name='Casa com piscina'
+        description="Linda casa de praia, lugar seguro e monitorado."
+        onPress={() => {}}
+        />
+
+
 
       </ScrollView>
 
