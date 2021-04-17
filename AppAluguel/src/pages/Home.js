@@ -2,9 +2,11 @@ import React from 'react';
 import { View, Text, StyleSheet,TextInput} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {Feather} from '@expo/vector-icons';
+import {useNavigation} from '@react-navigation/native'
+
 import New from '../components/New';
 import House from '../components/House';
-import {useNavigation} from '@react-navigation/native'
+import Recomend from '../components/Recomend';
 
 export default function Home(){
 
@@ -68,6 +70,30 @@ export default function Home(){
 
       <House
        cover={require('../assests/House6.jpeg')}
+       />
+
+     </ScrollView>
+
+     <Text style={[styles.title, {marginTop:20} ]}> Dica do dia </Text>
+
+     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal:15}}>
+
+       <Recomend
+       cover={require('../assests/House1.jpg')}
+       house='Rancho em Maceió'
+       offter='30%'
+       />
+
+      <Recomend
+       cover={require('../assests/House4.jpeg')}
+       house='Casa com piscina'
+       offter='20%'
+       />
+
+      <Recomend
+       cover={require('../assests/House2.jpg')}
+       house='Casa para lual'
+       offter='15%'
        />
 
      </ScrollView>
