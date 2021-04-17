@@ -5,7 +5,7 @@ import {createStackNavigator, HeaderTitle} from '@react-navigation/stack';
 import {Feather} from '@expo/vector-icons';
 
 import Home from './pages/Home';
-import Detail from './pages/Datail';
+import Detail from './pages/Detail';
 
 
 const Stack = createStackNavigator();
