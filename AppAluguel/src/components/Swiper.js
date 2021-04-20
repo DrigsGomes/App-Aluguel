@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, Image} from 'react-native';
+import { View, StyleSheet,Image} from 'react-native';
 import Swiper from 'react-native-swiper';
 
 export default function SwiperComponent () {
@@ -14,6 +14,7 @@ export default function SwiperComponent () {
        height:10,
        borderRadius:10,
    }}
+   
    activeDotColor='#fff'
    activeDotStyle={{
        borderColor: '#000',

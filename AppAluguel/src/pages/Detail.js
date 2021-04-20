@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {Ionicons, Feather} from '@expo/vector-icons';
 import {ScrollView} from 'react-native-gesture-handler';
+import {Stars} from 'react-native-stars';
 
 import SwiperComponent from '../components/Swiper';
 
@@ -15,9 +16,21 @@ export default function Detail() {
 
      <View style={styles.headerContent}>
 
-       <View>
+       <View style={{width:'65%'}}>
          <Text>Casa de praia</Text>
        </View>
+
+       <View style={{width:'35%'}}>
+         <Text style={styles.avali}>Avaliações</Text>
+         
+         <View style={{alignItems:'center', flexDirection:'row'}}>
+           <Stars
+           
+
+           />
+         </View>
+       </View>
+
 
      </View>
    </View>
@@ -33,7 +46,7 @@ const styles = StyleSheet.create({
   swiperContent:{
     flexDirection:'row',
     height:340,
-    height:'100%',
+    width:'100%',
   },
 
 
