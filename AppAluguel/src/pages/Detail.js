@@ -49,21 +49,21 @@ export default function Detail() {
        <View style={styles.slide}>
          <Image
          source={require('../assests/House4.jpeg')}
-         style={{width:95, height:95}}
+         style={{width:95, height:95, borderRadius:9}}
          />
        </View>
 
        <View style={styles.slide}>
          <Image
          source={require('../assests/House6.jpeg')}
-         style={{width:95, height:95}}
+         style={{width:95, height:95, borderRadius:8}}
          />
        </View>
 
        <View style={styles.slide}>
          <Image
          source={require('../assests/House2.jpg')}
-         style={{width:95, height:95}}
+         style={{width:95, height:95, borderRadius:9}}
          />
        </View>
 
@@ -110,6 +110,30 @@ const styles = StyleSheet.create({
     textShadowColor:'#000',
     textShadowOffset: { width:1, height:1},
     textShadowRadius: 1,
-  }
+  },
+  price:{
+    paddingHorizontal:20,
+    fontFamily:'Montserrat_700Bold',
+    fontSize:16,
+    color:'#000',
+  },
+
+  description:{
+    paddingHorizontal:20,
+    fontFamily:'Montserrat_500Medium',
+    color:'#b3aeae',
+    fontSize:14,
+    lineHeight:20,
+    marginTop:20,
+  },
+
+  slide:{
+    alignItems:'center',
+    justifyContent:'center',
+    height:95,
+    width:95,
+    borderRadius:9,
+    marginRight:20,
+  },
 
 });
