@@ -37,13 +37,37 @@ export default function Detail() {
        </View>
      </View>
 
-     <Text>
+     <Text style={styles.price}>
        R$ 1.200,80
      </Text>
 
-     <Text>
+     <Text style={styles.description}>
        Casa nova a beira do mar, lugar monitorado 24horas.
      </Text>
+
+     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{paddingHorizontal: 15, marginTop:30}}>
+       <View style={styles.slide}>
+         <Image
+         source={require('../assests/House4.jpeg')}
+         style={{width:95, height:95}}
+         />
+       </View>
+
+       <View style={styles.slide}>
+         <Image
+         source={require('../assests/House6.jpeg')}
+         style={{width:95, height:95}}
+         />
+       </View>
+
+       <View style={styles.slide}>
+         <Image
+         source={require('../assests/House2.jpg')}
+         style={{width:95, height:95}}
+         />
+       </View>
+
+     </ScrollView>
    </View>
   );
 }
